@@ -29,13 +29,21 @@ nav ul li {
     font-size: 20px;
 }
 
+/* nav ul li :active{
+    color:salmon;
+} */
+
+nav ul li :hover{
+    color: #544e67;
+}
+
 nav ul li a {
     color: black;
 }
 
-nav ul li .navbar-home {
+/* nav ul li .navbar-home {
     font-weight: bold;
-}
+} */
 
 .nav-left {
     flex: 50%;
@@ -45,6 +53,8 @@ nav ul li .navbar-home {
     flex: 50%;
     text-align: end;
     margin-right: 25px;
+    display: flex;
+    justify-content: right;
 }
 
 .nav-right a {
@@ -68,6 +78,7 @@ nav ul li .navbar-home {
     padding-right: 30%;
 }
 
+
 .contact-button {
     background-color: black;
     color: white;
@@ -78,18 +89,20 @@ nav ul li .navbar-home {
     margin:auto;
 }
 
+.contact-button:hover{
+    background-color:#544e67;
+}
+
 .contact {
     margin: auto;
     display: flex;
     justify-content:space-around;
-    width: 90%; 
+    width: 80%; 
     align-items: center;
 }
 
 .contact2 {
     display: flex;
-    /* justify-content: center;
-    align-self: center; */
 }
 
 a {

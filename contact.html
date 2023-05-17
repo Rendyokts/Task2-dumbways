@@ -5,52 +5,56 @@
     </head>
 
     <body>
-    <nav>
-        <div class="nav-left">
-            <ul>
-                <li>
-                    <img src="img/testdulugasih.png" alt="" />
-                </li>
-                <li>
-                    <a class="navbar-home" href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="#">My Project</a>
-                </li>
-            </ul>
-        </div>
-        <div class="nav-right">
-            <a href="contact.html">Contact me</a>
-        </div>
-    </nav>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li>
+                        <img src="img/testdulugasih.png"/>
+                    </li>
+                    <li>
+                        <a class="navbar-home" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li> 
+                <a href="contact.html">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     
     <div class="contactform">
         <h1 class="title">HIT ME UP</h1>
         <form>
             <div>
                 <label for="Name-input">Name</label>
-                <input id="Name-input" type="text" required>
+                <input id="Name-input" type="text" required placeholder="Input Your Name">
             </div>
             <div>
                 <label for="Email-input">Email</label>
-                <input id="Email-input" type="email" required>
+                <input id="Email-input" type="email" required placeholder="Input Your Email">
             </div>
             <div>
                 <label for="Phone-input">Phone Number</label>
-                <input id="Phone-input" type="number" required>
+                <input id="Phone-input" type="number" required placeholder="eg:0818xxxxxx">
             </div>
             <div>
                 <label for="Subject-input">Subject</label>
                 <select id="Subject-input">
-                    <option value="" hidden >select</option>
+                    <option value="" hidden >Select</option>
                     <option>Consulting</option>
                     <option>Web Development</option>
                     <option>Cyber Security</option>
                 </select>
             </div>
             <div>
-                <label for="Message-input">Your Messages</label>
-                <textarea id="Message-input" rows="5" cols="10"></textarea>
+                <label for="Message-input">Messages</label>
+                <textarea id="Message-input" rows="5" cols="10" placeholder="Your Message"></textarea>
             </div>
         </form>
             <button type="button" onclick="submitData()">Submit</button>
