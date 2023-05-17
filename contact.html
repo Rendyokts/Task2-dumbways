@@ -40,8 +40,8 @@
                 <input id="Phone-input" type="number" required>
             </div>
             <div>
-                <label for="subject-input">Subject</label>
-                <select id="subject-input">
+                <label for="Subject-input">Subject</label>
+                <select id="Subject-input">
                     <option value="" hidden >select</option>
                     <option>Consulting</option>
                     <option>Web Development</option>
@@ -49,13 +49,12 @@
                 </select>
             </div>
             <div>
-                <label for="input-message">Your Messages</label>
-                <textarea id="input-message" rows="5" cols="10"></textarea>
+                <label for="Message-input">Your Messages</label>
+                <textarea id="Message-input" rows="5" cols="10"></textarea>
             </div>
         </form>
-            <button class="button-submit">Submit</button>
+            <button type="button" onclick="submitData()">Submit</button>
     </div>
-
-
+    <script src="contact.js"></script>
     </body>
 </html>

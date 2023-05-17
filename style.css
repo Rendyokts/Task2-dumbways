@@ -75,10 +75,11 @@ nav ul li .navbar-home {
     padding: 8px 23px;
     font-size: 20px;
     cursor: pointer;
+    margin:auto;
 }
 
 .contact {
-    margin: 30px 0;
+    margin: auto;
     display: flex;
     justify-content:space-around;
     width: 90%; 
@@ -87,7 +88,8 @@ nav ul li .navbar-home {
 
 .contact2 {
     display: flex;
-
+    /* justify-content: center;
+    align-self: center; */
 }
 
 a {
@@ -106,6 +108,10 @@ a {
     text-align: center;
     padding-bottom: 3px;
     align-items: center;
+}
+
+.title{
+    font-weight: bold;
 }
 
 
@@ -150,7 +156,7 @@ textarea {
     resize: none;
 }
 
-.button-submit {
+button{
     background-color: rgb(0, 0, 0);
         color: white;
         padding: 6px 25px;
@@ -162,6 +168,14 @@ textarea {
         box-shadow: 0 0 15px #9f9f9f;
 }
 
-.button-submit:hover{
+button:hover{
     background-color: #565656;
+}
+
+@media (max-width:768px) {
+    .mobile-menu    {
+        display:block;
+        overflow-x: hidden;
+        white-space: no-wrap;
+    }
 }
