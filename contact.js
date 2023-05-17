@@ -5,9 +5,26 @@ function submitData() {
     let subject = document.getElementById("Subject-input").value;
     let message = document.getElementById("Message-input").value;
 
-    if (name == "" && email == "" && phone == "" && subject == "" && message == ""){
+    if (name == "" 
+            || email == "" 
+            || phone == "" 
+            || subject == "" 
+            || message == ""){
         return alert("Data is required");
     }
+
+    // if (name == "") {
+    //     return alert("Name is required");
+    // } else if (email == "") {
+    //     return alert("Email is required");
+    // } else if (phone == "") {
+    //     return alert("Phone is required");
+    // } else if (subject == "") {
+    //     return alert("Subject is required");
+    // } else if (message == "") {
+    //     return alert("Message is required");
+    // }
+    
 
     let emailReceiver = "rendyoktavian08@gmail.com";
 
@@ -30,4 +47,4 @@ function submitData() {
     };
 
     console.log(emailer);
-}
+};
