@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.css"/>
+    <link rel="icon" href="img/testdulugasih.png" />
+    <title>Blog</title>
+  </head>
+  <body>
+    <header>
+      <div class="container" style="display: block">
+        <h1><a href="index.html">Rendi Oktavian</a></h1>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#">PORTFOLIO</a></li>
+          <!-- <li><a href="#">SERVICE</a></li> -->
+          <!-- <li><a href="#">BLOG</a></li> -->
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <!-- mobile menu -->
+        <label for="check" class="mobile-menu"
+          ><i class="ri-menu-line"></i
+        ></label>
+      </div>
+    </header>
+
+    <div class="blog">
+      <div class="blog-form">
+        <div class="form-container">
+          <form onSubmit="addBlog(event)">
+            <h1>Create Post Blog</h1>
+            <div>
+              <label for="input-blog-title">Title</label>
+              <input
+                type="text"
+                id="input-blog-title"
+                placeholder="Input title"
+              />
+            </div>
+            <div>
+              <label for="input-blog-content">Content</label>
+              <textarea
+                id="input-blog-content"
+                placeholder="Input the content"
+              ></textarea>
+            </div>
+            <div>
+              <label for="">Upload Image</label>
+              <div class="input-blog-image-group">
+                <label for="input-blog-image">
+                  <p>eg:JPG,PNG</p>
+                  <i class="ri-attachment-line"></i>
+                </label>
+                <input type="file" id="input-blog-image" hidden />
+              </div>
+            </div>
+            <div class="button-group">
+              <button>Post Blog</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <hr class="line" />
+
+      <div id="contents" class="blog-list">
+        <div class="blog-list-item">
+          <div class="blog-image">
+            <img src="img/nahloh.jpeg" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="btn-group">
+              <button class="btn-edit">Edit Post</button>
+              <button class="btn-delete">Delete Post</button>
+            </div>
+            <h1>
+              <a href="blog-detail.html" target="_blank">
+                Data Nasabah BSI yang Dijual LockBit di Dark Web Terungkap</a
+              >
+            </h1>
+            <div class="detail-blog-content">
+              12 Jul 2021 22:30 WIB | Rendi Oktavian
+            </div>
+            <p>
+              PIKIRAN RAKYAT - LockBit, kawanan peretas alias hacker yang
+              mengaku menjadi 'dalang' di balik erornya BSI Mobile selama 4
+              hari, mengungkap bahwa mereka telah menjual data milik nasabah
+              Bank Syariah Indonesia (BSI). Tak hanya data pribadi nasabah,
+              mereka juga menjual data karyawan, serta 1,5 terabyte data
+              internal. Pengumuman dari LockBit itu diungkap akun Twitter
+              @darktracer_int pada Selasa, 16 Mei 2023 pagi. Mereka menyebut
+              menjual data pribadi nasabah BSI lantaran negosiasi antara hacker
+              dengan pihak bank berakhir.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="blog.js"></script>
+  </body>
+</html>
