@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 70px;
+}
+header a{
+    color: black;
+}
+
+header h1{
+    display: block;
+    float: left;
+    padding: 15px 24px;
+    text-transform: uppercase;
+}
+
+header h1 a:hover {
+    color: salmon;
+}
+
+header h1 a{
+    transition: .2s;
+}
+
+header ul{
+    float: right;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    color:salmon;
+}
+
+header ul li{
+    padding: 24px;
+    display: inline-block;
+}
+
+header ul li a{
+    transition: .2s;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* body {
+    background-image: url("img/background-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+header .container{
+    width: 90%;
+    margin:10px auto;
+}
+
+header .container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.container {
+    display: flex;
+    margin:5%;
+    border-radius: 7px;
+    background-color: #eaeaea;
+    box-shadow: 0 0 15px#565656;
+}
+.project-form {
+    margin: 50px auto;
+    width: 30%;
+}
+
+.project-form h1{
+    text-align: center;
+}
+
+label{
+    font-size: 20px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="date"],
+textarea{
+    /* background-color: #ffffff; */
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 15px #9f9f9f;
+    resize: none;
+}
+
+/* #form-inputan{
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 15px #9f9f9f;
+} */
+
+button{
+    background-color: rgb(0, 0, 0);
+        color: white;
+        padding: 6px 25px;
+        border: none;
+        border-radius: 10px;
+        margin-left: 87%;
+        font-size: 15px;
+        cursor: pointer;
+        box-shadow: 0 0 15px #9f9f9f;
+        margin-top: 20px ;
+        
+}
+
+button:hover{
+    background-color: salmon;
+}
+
+#date{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+#date .date-field{
+    width: 45%;
+}
+
+#grid {
+    width: 500px;
+    display: grid;
+    grid-template-areas: "a a";
+    gap: 10px;
+    grid-auto-rows: 30px;
+    margin-bottom: 10px;
+}
+
+#grid .checkbox,
+#check-item1, 
+#check-item2, 
+#check-item3, 
+#check-item4{
+    cursor: pointer;
+    position: relative;
+}
+
+#image-input-wrap label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 6.4px;
+    padding-right: 1em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    margin-bottom: 0;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 15px #9f9f9f;
+}
+
+#image-input-wrap label p {
+    font-size: small;
+    background-color: #F1F6F9;
+    border-radius: 6.4px 0 0 6.4px;
+    margin: 0;
+    padding: 16px;
+}
+
+#image-input-wrap label p:hover {
+    color: #ff4c34;
+    transition: ease-in-out .3s;
+    transition-delay: .03s;
+}
+
+#image-input-wrap {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#image-input-wrap i,p{
+    cursor: pointer;
+}
+
+#blog-wrapper{
+    background-color: red;
+    box-shadow: 0px 2px 8px 0px #565656;
+    padding: 6.5px;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+#card-wrapper{
+    padding: 16px 32px;
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    /* margin: 32px 64px auto auto; */
+}
+
+.preview{
+    /* width: 100%; */
+    max-width: 256px;
+    background-color: #ffff;
+    border-radius: 6.4px;
+    padding: 8px 8px 16px 8px;
+    box-shadow: 0px 2px 8px 0px #565656;
+    display: grid;
+}
+
+.preview img{
+    width: 256px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6.4px;
+}
+
+.preview h4{
+    color: #0000;
+    line-height: .8;
+    margin: 80px 0;
+}
+
+.preview h4:hover{
+    color: salmon;
+    transition: ease-in-out .3s;
+    transition-delay: .3s;
+}
+
+.preview .duration{
+    font-size: 16px;
+    line-height: 0;
+    color: #565656;
+    margin-bottom: 24px;
+}
+
+.preview .desc-blog{
+    font-size: 16px;
+    margin-bottom: 24px;
+    line-height: 1.25;
+}
+
+.tech-icon{
+    margin-top: 30px;
+    margin-bottom: 24px;
+}
+
+.tech-icon i{
+    margin-right: 8px;
+}
+
+.card-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-btn button{
+    width: 50%;
+}
+
+.card-btn .edit-btn .delete-btn:hover{
+    background-color: salmon;
+}

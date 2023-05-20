@@ -1,56 +1,42 @@
 <html>
   <head>
     <title>Contact</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
     <link rel="icon" href="img/testdulugasih.png" />
   </head>
 
   <body>
     <header>
-      <div class="container" style="display: block">
+      <div class="container" style="display: block;" >
         <h1><a href="index.html">Rendi Oktavian</a></h1>
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="#">PORTFOLIO</a></li>
           <li><a href="#">SERVICE</a></li>
-          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="addMyProject.html">BLOG</a></li>
           <!-- <li><a href="contact.html">CONTACT</a></li> -->
         </ul>
         <!-- mobile menu -->
         <!-- <label for="check" class="mobile-menu"><i class="ri-menu-line"></i></label> -->
       </div>
     </header>
+
     <div class="contactform">
       <h1 class="title">HIT ME UP</h1>
       <form>
-        <div>
+        <div class="field">
           <label for="Name-input">Name</label>
-          <input
-            id="Name-input"
-            type="text"
-            required
-            placeholder="Input Your Name"
-          />
+          <input id="Name-input" type="text" required placeholder="Input Your Name"/>
         </div>
-        <div>
+        <div class="field">
           <label for="Email-input">Email</label>
-          <input
-            id="Email-input"
-            type="email"
-            required
-            placeholder="Input Your Email"
-          />
+          <input id="Email-input" type="email" required placeholder="Input Your Email"/>
         </div>
-        <div>
+        <div class="field">
           <label for="Phone-input">Phone Number</label>
-          <input
-            id="Phone-input"
-            type="number"
-            required
-            placeholder="eg:0818xxxxxx"
-          />
+          <input id="Phone-input" type="number" required placeholder="eg:0818xxxxxx"/>
         </div>
-        <div>
+        <div class="field">
           <label for="Subject-input">Subject</label>
           <select id="Subject-input">
             <option value="" hidden>Select</option>
@@ -61,12 +47,7 @@
         </div>
         <div>
           <label for="Message-input">Messages</label>
-          <textarea
-            id="Message-input"
-            rows="5"
-            cols="10"
-            placeholder="Your Message"
-          ></textarea>
+          <textarea id="Message-input" rows="5" cols="10" placeholder="Your Message"></textarea>
         </div>
         <button type="button" onclick="submitData()">Submit</button>
       </form>

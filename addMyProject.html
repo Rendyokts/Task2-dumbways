@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="addMyProject.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="img/testdulugasih.png">
+  <title>Add My Project</title>
+</head>
+<body>
+  <header>
+    <div class="container" style="display: block;">
+        <h1><a href="index.html">Rendi Oktavian</a></h1>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+<!-- mobile menu -->
+  <label for="check" class="mobile-menu"><i class="ri-menu-line"></i></label>
+    </div>
+  </header>
+
+  <div class="project-form">
+    <h1 class="title">Add Project</h1>
+    <div class="form-inputan">
+      <div class="field">
+        <label for="Project-name">Project Name</label>
+        <input id="Project-name" type="text" required placeholder="Input The Title"/>
+      </div>
+
+      <div id="date">
+        <div class="date-field">
+          <label for="Start-date">Start Date</label>
+          <input id="Start-date" type="date" required/>
+        </div>
+
+        <div class="date-field">
+          <label for="End-date">End Date</label>
+          <input id="End-date" type="date" required/>
+        </div>
+      </div>
+      <div class="desc">
+        <label for="">Description</label>
+        <textarea name="desc" id="desc" cols="30" rows="10" required placeholder="Highlight The Topic"></textarea>
+      </div>
+    </div>
+      
+      <div>
+        <label for="tech">
+          Technologies
+        </label>
+        
+        <div id="grid">
+          <div id="item1">
+            <input id="check-item1" type="checkbox">
+            <label class="checkbox" for="check-item1">JavaScript</label>
+          </div>
+          <div id="item2">
+            <input id="check-item2" type="checkbox">
+            <label class="checkbox" for="check-item2">Python</label>
+          </div>
+          <div id="item3">
+            <input id="check-item3" type="checkbox">
+            <label class="checkbox" for="check-item3">Pentest Tools</label>
+          </div>
+          <div id="item4">
+            <input id="check-item4" type="checkbox">
+            <label class="checkbox" for="check-item4">Java</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="Image-upload">
+        <label class="field">Upload Image</label>
+        <div id="image-input-wrap">
+            <label for="image-input">
+                <p>Choose</p>
+                <i class="ri-attachment-line"></i>
+            </label>
+            <input type="file" id="image-input" required hidden/>
+        </div>
+    </div>
+      <button class="submit-button" type="submit" onclick="">Post</button>
+    </form>
+  </div>
+
+  <main id="blog-wrapper">
+    <!-- <h2>Available Project</h2> -->
+    
+    <section id="card-wrapper">
+        <div class="preview">
+          <img src="img/java-gui.png" alt="">
+          <a href="">
+            <h4>Java GUI</h4>
+          </a>
+          <p class="duration">Duration: 1 Months</p>
+          <p class="desc-blog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere id dolorum deserunt quam, nulla fuga quasi obcaecati ipsa, eaque aliquid similique earum necessitatibus ullam inventore corrupti cum asperiores. Alias, dolor!</p>
+          <div class="tech-icon">
+            <i class="fa-brands fa-java fa-2xl"></i>
+            <i class="fa-brands fa-js fa-2xl"></i>
+            <i class="fa-brands fa-python fa-2xl"></i>
+            <i class="fa-brands fa-linux fa-2xl"></i>
+          </div>
+          <div class="card-btn">
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </div>
+        </div>
+
+        <div class="preview">
+          <img src="img/java-gui.png" alt="">
+          <a href="">
+            <h4>Java GUI</h4>
+          </a>
+          <p class="duration">Duration: 1 Months</p>
+          <p class="desc-blog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere id dolorum deserunt quam, nulla fuga quasi obcaecati ipsa, eaque aliquid similique earum necessitatibus ullam inventore corrupti cum asperiores. Alias, dolor!</p>
+          <div class="tech-icon">
+            <i class="fa-brands fa-java fa-2xl"></i>
+            <i class="fa-brands fa-js fa-2xl"></i>
+            <i class="fa-brands fa-python fa-2xl"></i>
+            <i class="fa-brands fa-linux fa-2xl"></i>
+          </div>
+          <div class="card-btn">
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </div>
+        </div>
+
+        <div class="preview">
+          <img src="img/java-gui.png" alt="">
+          <a href="">
+            <h4>Java GUI</h4>
+          </a>
+          <p class="duration">Duration: 1 Months</p>
+          <p class="desc-blog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere id dolorum deserunt quam, nulla fuga quasi obcaecati ipsa, eaque aliquid similique earum necessitatibus ullam inventore corrupti cum asperiores. Alias, dolor!</p>
+          <div class="tech-icon">
+            <i class="fa-brands fa-java fa-2xl"></i>
+            <i class="fa-brands fa-js fa-2xl"></i>
+            <i class="fa-brands fa-python fa-2xl"></i>
+            <i class="fa-brands fa-linux fa-2xl"></i>
+          </div>
+          <div class="card-btn">
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </div>
+        </div>
+
+        <!-- <div class="preview">
+          <img src="img/java-gui.png" alt="">
+          <a href="">
+            <h4>Java GUI</h4>
+          </a>
+          <p class="duration">Duration: 1 Months</p>
+          <p class="desc-blog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere id dolorum deserunt quam, nulla fuga quasi obcaecati ipsa, eaque aliquid similique earum necessitatibus ullam inventore corrupti cum asperiores. Alias, dolor!</p>
+          <div class="tech-icon">
+            <i class="fa-brands fa-java fa-2xl"></i>
+            <i class="fa-brands fa-js fa-2xl"></i>
+            <i class="fa-brands fa-python fa-2xl"></i>
+            <i class="fa-brands fa-linux fa-2xl"></i>
+          </div>
+          <div class="card-btn">
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </div>
+        </div> -->
+      </section>
+    </main>
+
+    <script src="addMyProject.js"></script>
+  </div>
+</body>
+</html>
