@@ -28,6 +28,7 @@
 
   <div class="project-form">
     <h1 class="title">Add Project</h1>
+    <form onsubmit="postProject(event)">
     <div class="form-inputan">
       <div class="field">
         <label for="Project-name">Project Name</label>
@@ -63,7 +64,7 @@
           </div>
           <div id="item2">
             <input id="check-item2" type="checkbox">
-            <label class="checkbox" for="check-item2">Python</label>
+            <label class="checkbox" for="check-item2">Java</label>
           </div>
           <div id="item3">
             <input id="check-item3" type="checkbox">
@@ -71,7 +72,7 @@
           </div>
           <div id="item4">
             <input id="check-item4" type="checkbox">
-            <label class="checkbox" for="check-item4">Java</label>
+            <label class="checkbox" for="check-item4">Python</label>
           </div>
         </div>
       </div>
@@ -86,17 +87,19 @@
             <input type="file" id="image-input" required hidden/>
         </div>
     </div>
-      <button class="submit-button" type="submit" onclick="">Post</button>
+      <button class="submit-button" type="submit" onclick="formEmpty()">Post</button>
     </form>
   </div>
 
+  <hr class="line-hr">
+  <div class="title">
+    <h2>Available Project</h2>
+  </div>
   <main id="blog-wrapper">
-    <!-- <h2>Available Project</h2> -->
-    
     <section id="card-wrapper">
         <div class="preview">
           <img src="img/java-gui.png" alt="">
-          <a href="">
+          <a href="blogDetail.html">
             <h4>Java GUI</h4>
           </a>
           <p class="duration">Duration: 1 Months</p>
@@ -115,7 +118,7 @@
 
         <div class="preview">
           <img src="img/java-gui.png" alt="">
-          <a href="">
+          <a href="blogDetail.html">
             <h4>Java GUI</h4>
           </a>
           <p class="duration">Duration: 1 Months</p>
@@ -134,7 +137,7 @@
 
         <div class="preview">
           <img src="img/java-gui.png" alt="">
-          <a href="">
+          <a href="blogDetail.html">
             <h4>Java GUI</h4>
           </a>
           <p class="duration">Duration: 1 Months</p>
@@ -153,7 +156,7 @@
 
         <!-- <div class="preview">
           <img src="img/java-gui.png" alt="">
-          <a href="">
+          <a href="blogDetail.html">
             <h4>Java GUI</h4>
           </a>
           <p class="duration">Duration: 1 Months</p>

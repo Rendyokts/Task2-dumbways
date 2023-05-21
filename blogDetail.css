@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 70px;
+}
+header a{
+    color: black;
+}
+
+header h1{
+    display: block;
+    float: left;
+    padding: 15px 24px;
+    text-transform: uppercase;
+}
+
+header h1 a:hover {
+    color: salmon;
+}
+
+header h1 a{
+    transition: .2s;
+}
+
+header ul{
+    float: right;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    color:salmon;
+}
+
+header ul li{
+    padding: 24px;
+    display: inline-block;
+}
+
+header ul li a{
+    transition: .2s;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* body {
+    background-image: url("img/background-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+header .container{
+    width: 90%;
+    margin:10px auto;
+}
+
+header .container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.container {
+    display: flex;
+    margin:5%;
+    border-radius: 7px;
+    background-color: #eaeaea;
+    box-shadow: 0 0 15px#565656;
+}
+
+.blog-title{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.blog-wrapper{
+    margin: 0;
+    padding: 0;
+}
+
+.project-info{
+    background-color: white;
+    padding: 16px 16px 0 16px;
+    border-radius: 0 6.4px 6.4px 0;
+    box-shadow: 0px 2px 8px 0px #565656;
+}
+
+.top-layer{
+    display: flex;
+    justify-content: center;
+    margin: 38px 112px 64px;
+}
+
+.image-project img{
+    width: 512px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6.4px 0 0 6.4px;
+    box-shadow: 0px 2px 8px 0px #565656;
+}
+
+.date-duration-project h4, 
+.project-tech h4{
+    line-height: 3;
+}
+
+.date-duration-project{
+    margin-bottom: 64px;
+}
+
+.date-duration-project div{
+    margin-bottom: 19px;
+}
+
+.date-duration-project i, 
+.project-tech i{
+    padding-right: 4px;
+}
+
+.date-duration-project span,
+.project-tech span{
+    color: #565656;
+}
+
+.grid-tech{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    row-gap: 19px;
+}
+
+.project-detail{
+    box-shadow: 0px 2px 8px 0px #565656;
+    background-color: white;
+    padding: 38px 112px 192px 112px;
+}
+
+.project-detail p{
+    text-align: justify;
+}
