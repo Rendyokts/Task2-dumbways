@@ -3,7 +3,7 @@ function formEmpty(){
     let startDate = document.getElementById("Start-date").value;
     let endDate = document.getElementById("End-date").value;
     let description = document.getElementById("desc").value;
-    let image = document.getElementById("image-input").value;
+    let image = document.getElementById("image-input").files;
 
     if(projectName == ""){
         return alert("Please input a project title");
@@ -37,7 +37,7 @@ function postProject(event){
     let javascriptIconDec = document.getElementById("check-item1").checked ? javascriptIcon : "";
     let javaIconDec = document.getElementById("check-item2").checked ? javaIcon : "";
     let linuxIconDec = document.getElementById("check-item3").checked ? linuxIcon : "";
-    let pythonIconDec = document.getElementById("check-item4").checked ?pythonIcon : "";
+    let pythonIconDec = document.getElementById("check-item4").checked ? pythonIcon : "";
 
     image = URL.createObjectURL(image[0]);
     console.log(image);
@@ -51,7 +51,7 @@ function postProject(event){
         javaIconDec, 
         linuxIconDec, 
         pythonIconDec,
-        image
+        image,
     };
 
     projectData.push(projectCard);
@@ -76,13 +76,14 @@ function postProject(event){
                     ${projectData[index].javascriptIconDec}
                     ${projectData[index].javaIconDec}
                     ${projectData[index].linuxIconDec}
-                    ${projectData[index].pythonIconDec}
+                    
                 </div>
+
                 <div class="card-btn">
                     <button class="edit-btn">Edit</button>
                     <button class="delete-btn">Delete</button>
                 </div>
             </div>
-        `
+        `;
         }
     }

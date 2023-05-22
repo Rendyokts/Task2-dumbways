@@ -223,7 +223,7 @@ hr .line-hr{
 }
 
 .preview{
-    /* width: 100%; */
+    width: 100%;
     max-width: 256px;
     background-color: #ffff;
     border-radius: 6.4px;
