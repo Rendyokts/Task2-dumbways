@@ -50,11 +50,11 @@ a{
     text-decoration: none;
 }
 
-/* body {
-    background-image: url("img/background-img.jpg");
+body {
+    background-image: url("img/back-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-} */
+}
 
 header .container{
     width: 90%;
